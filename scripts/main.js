@@ -20,7 +20,7 @@ var mode = 'pomodoro'
 let modes = {
   pomodoro: 1500,
   shortBreak: 300,
-  longBreak: 600,
+  longBreak: 900,
 }
 var timer = modes[mode]
 
