@@ -1,0 +1,159 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-size: 16px;
+  box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  background: #F3F3F3;
+  padding-top: 80px;
+  font-size: 16px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  max-width: 480px;
+  row-gap: 4px;
+}
+
+h1 {
+  width: 100%;
+  font-size: 2.3rem;
+  font-weight: bold;
+  text-align: center;
+  color: #3A4249;
+}
+
+h4 {
+  opacity: 0.8;
+  width: 100%;
+  font-size: 1.5rem;
+  font-weight: normal;
+  text-align: center;
+}
+
+main {
+  margin-top: 30px;
+  width: 500px;
+  height: 350px;
+  border-radius: 8px;
+  background: white;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#modes, #timer-wrapper, #button-wrapper{
+  width: 90%; 
+  max-width: 430px;
+  height: fit-content;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#timer-minutes, #timer-seconds, #timer-seperator {
+  font-size: 11rem;
+
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #3A4249;
+}
+
+div#button-wrapper {
+  position: relative;
+  background: #E6E6E6;
+  height: 56px;
+}
+
+#primary-button {
+  width: 100%; 
+  height: 100%;
+  font-weight: 700;
+  font-size: 1.5rem;
+  z-index: 3;
+
+  background: transparent;
+  cursor: pointer;
+  font-style: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #454748;
+  border: none;
+}
+
+#button-text {
+  color: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+#modes {
+  display: flex;
+}
+
+#modes-list{
+  display: grid;
+  
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 30px;
+}
+
+.mode {
+  width: 100%;
+  height: 24px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mode-button {
+  display: inherit;
+  align-items: inherit;
+  justify-content: inherit;
+  outline: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+
+  height: 100%;
+  width: 100%; 
+  border-radius: 5px;
+  padding: 15px 15px;
+}
+
+.mode-button.mode {
+  background-color: #E6E6E6;
+}
+
+.mode-button span {
+  font-size: 1.2rem;
+}
+
+#progress-bar {
+  position: absolute;
+  background-color: #c9c9c966;
+  
+  z-index: 2;
+  top: 0px;
+  bottom: 0px; 
+  left: 0px;
+  width: 0px;
+}

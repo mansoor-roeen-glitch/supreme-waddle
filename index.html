@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+    <script type="module" src="/scripts/main.js"></script>
+    <script type="module" src="/scripts/actions.js"></script>
+
+    <title>Pomodoro</title>
+</head>
+<body>
+    <header>
+        <h1 id="app-header">
+            Pamadoro App
+        </h1>
+
+        <h4 id="app-status-desc">
+            You have completed 0 work cycles
+        </h4>
+    </header>
+
+    <main>
+
+        <div id="modes">
+            <ul id="modes-list">
+                <li class="mode">
+                    <Button class="mode-button mode" id="pomodoro-button" data-mode="pomodoro">
+                        <span class="mode-button-text">Pomodoro</span>
+                    </Button>
+                </li>
+
+                <li class="mode">
+                    <Button class="mode-button" id="shortBreak-button" data-mode="shortBreak">
+                        <span class="mode-button-text">Short Break</span>
+                    </Button>
+                </li>
+
+                <li class="mode">
+                    <Button class="mode-button" id="longBreak-button" data-mode="longBreak">
+                        <span class="mode-button-text">Long Break</span>
+                    </Button>
+                </li>
+            </ul>
+        </div>
+
+        <div id="timer-wrapper">
+            <span id="timer-minutes">00</span>
+            <span id="timer-seperator">:</span>
+            <span id="timer-seconds">00</span>
+        </div>
+
+        <div id="button-wrapper">
+            <div id="progress-bar"></div>
+            <button id="primary-button">
+                <span id="button-text">
+                    Start the timer
+                </span>
+            </button>
+        </div>
+    </main>
+
+
+</body>
+</html>
